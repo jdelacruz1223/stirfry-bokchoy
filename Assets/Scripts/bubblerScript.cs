@@ -18,6 +18,8 @@ public class bubblerScript : MonoBehaviour
         particle = GetComponentInChildren<ParticleSystem>();
         if(isPull) {
             dir = -transform.up;
+            particle.transform.localPosition = new Vector2(particle.transform.localPosition.x, particle.transform.localPosition.y + 8f);
+            particle.transform.localRotation = new Quaternion(particle.transform.localRotation.x * -1, particle.transform.localRotation.y, particle.transform.localRotation.z, particle.transform.localRotation.w);
         } else {
             dir = transform.up;
         }
