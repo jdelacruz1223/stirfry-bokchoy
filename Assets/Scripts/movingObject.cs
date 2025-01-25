@@ -6,7 +6,7 @@ public class movingObject : MonoBehaviour
     private enum direction {
         up, down, left, right
     }
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 10f;
     [SerializeField] private direction moveDirection;
     [SerializeField] private float distance = 5f;
     private Vector2 startPos;
