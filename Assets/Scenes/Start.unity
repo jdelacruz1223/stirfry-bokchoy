@@ -153,9 +153,9 @@ RectTransform:
   - {fileID: 1215523027}
   m_Father: {fileID: 459649632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 144.7143, y: -59.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 80.5, y: -31}
   m_SizeDelta: {x: 161, y: 31}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &282636883
@@ -286,9 +286,9 @@ RectTransform:
   - {fileID: 1023188764}
   m_Father: {fileID: 459649632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 144.7143, y: -59.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 80.5, y: -15.5}
   m_SizeDelta: {x: 161, y: 31}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &349190845
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -554,10 +554,10 @@ RectTransform:
   - {fileID: 349190844}
   m_Father: {fileID: 473742782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -83.75215, y: 50.5}
+  m_SizeDelta: {x: 167.5043, y: 101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &473742781
 GameObject:
@@ -740,9 +740,9 @@ RectTransform:
   - {fileID: 356324810}
   m_Father: {fileID: 459649632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 144.7143, y: -59.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 80.5, y: 0}
   m_SizeDelta: {x: 161, y: 31}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &983889190
@@ -896,7 +896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
