@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
+#if UNITY_EDITOR
+    using UnityEditor.Experimental.GraphView;
+    #endif
 using UnityEngine;
 
 public class bubblerScript : MonoBehaviour

@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MattsTestRoom.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Start.unity
+    guid: 8f2bd5121ed9d324a8cb22f0deb15f9e
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 9242e2a648c9a5e438de1b1fb47bf118
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 9e7318dcf6fa1b94ba8987eba5809eeb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
