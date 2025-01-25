@@ -5,17 +5,18 @@ public class DataManager : MonoBehaviour
     private static DataManager instance;
     public static DataManager Instance {get {return instance;}}
     
-    [SerializeField] public bool Debug;
+    [SerializeField] public bool DebugMode;
 
     public void Awake()
     {
-        if (instance != null && instance != this)
+        if (instance == null)
         {
-            Destroy(this.gameObject);
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            instance = this;
+            Destroy(gameObject);
         }
     }
 
