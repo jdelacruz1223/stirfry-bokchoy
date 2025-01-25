@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
+#if UNITY_EDITOR
+    using UnityEditor.Experimental.GraphView;
+    #endif
 using UnityEngine;
 
 public class bubblerScript : MonoBehaviour
@@ -8,10 +10,12 @@ public class bubblerScript : MonoBehaviour
     public bool isPull = false;
     private Rigidbody2D ringRB;
     private Vector2 dir;
+    private ParticleSystem particle;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        particle = GetComponentInChildren<ParticleSystem>();
         if(isPull) {
             dir = -transform.up;
         } else {
@@ -22,9 +26,14 @@ public class bubblerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && ringRB != null) {
+        if (Input.GetKey(KeyCode.Space)) {
             Debug.Log("push");
-            ringRB.AddForce(dir * force);
+            if (ringRB != null) ringRB.AddForce(dir * force);
+        }
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            particle.Play();
+        } else if (Input.GetKeyUp(KeyCode.Space)) {
+            particle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
         }
     }
     private void OnTriggerEnter2D(Collider2D collider) {
