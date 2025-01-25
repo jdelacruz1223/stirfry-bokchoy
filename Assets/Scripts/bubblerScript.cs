@@ -13,7 +13,7 @@ public class bubblerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        particle = GetComponent<ParticleSystem>();
+        particle = GetComponentInChildren<ParticleSystem>();
         if(isPull) {
             dir = -transform.up;
         } else {
@@ -24,12 +24,14 @@ public class bubblerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && ringRB != null) {
+        if (Input.GetKey(KeyCode.Space)) {
             Debug.Log("push");
-            ringRB.AddForce(dir * force);
+            if (ringRB != null) ringRB.AddForce(dir * force);
+        }
+        if (Input.GetKeyDown(KeyCode.Space)) {
             particle.Play();
-        } else {
-            particle.Pause();
+        } else if (Input.GetKeyUp(KeyCode.Space)) {
+            particle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
         }
     }
     private void OnTriggerEnter2D(Collider2D collider) {
