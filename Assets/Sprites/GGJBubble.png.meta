@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GGJBubble_0: -3744980902623593583
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
