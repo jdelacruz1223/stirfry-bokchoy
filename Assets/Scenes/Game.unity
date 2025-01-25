@@ -562,9 +562,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 656166877}
+      - m_Target: {fileID: 656166882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: QuitToMainMenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -743,9 +743,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 656166882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: QuitButton
+        m_MethodName: OptionsButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
