@@ -8,10 +8,12 @@ public class bubblerScript : MonoBehaviour
     public bool isPull = false;
     private Rigidbody2D ringRB;
     private Vector2 dir;
+    private ParticleSystem particle;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        particle = GetComponent<ParticleSystem>();
         if(isPull) {
             dir = -transform.up;
         } else {
@@ -25,6 +27,9 @@ public class bubblerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && ringRB != null) {
             Debug.Log("push");
             ringRB.AddForce(dir * force);
+            particle.Play();
+        } else {
+            particle.Pause();
         }
     }
     private void OnTriggerEnter2D(Collider2D collider) {
