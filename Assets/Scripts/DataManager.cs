@@ -9,13 +9,14 @@ public class DataManager : MonoBehaviour
 
     public void Awake()
     {
-        if (instance != null && instance != this)
+        if (instance == null)
         {
-            Destroy(this.gameObject);
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            instance = this;
+            Destroy(gameObject);
         }
     }
 

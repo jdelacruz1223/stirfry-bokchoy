@@ -23,4 +23,10 @@ public class MenuManager : MonoBehaviour
         if (DataManager.Instance.DebugMode) Debug.Log("Options Button (Nothing atm)");
 
     }
+
+    public void QuitToMainMenuButton()
+    {
+        if (DataManager.Instance.DebugMode) Debug.Log("QuitToMainMenu Button");
+        SceneManager.LoadScene("Start");
+    }
 }
