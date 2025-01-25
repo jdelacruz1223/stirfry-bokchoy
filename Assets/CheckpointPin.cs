@@ -9,14 +9,20 @@ public class CheckpointPin : MonoBehaviour
     
     void Update()
     {
-        // we enable the pin floor only if the player is above the pin, thereby allowing the player to fall onto the checkpoint
-        Vector3 toPlayer = player.position - transform.position;
-        EnableFloor(toPlayer.y > 0);
+        EnableFloor();
     }
 
-    void EnableFloor(bool a)
+    // we enable the pin floor only if the player is above said floor, thereby allowing the player to fall onto the checkpoint
+    void EnableFloor()
     {
-        pinFloor1.enabled = a;
-        pinFloor2.enabled = a;
+        // the colliders are turned 45 degrees, so we simply add the x difference to the pin's y position to check if the player
+        // is above the FLOOR and not the pin itself
+        float xDifference = Mathf.Abs(transform.position.x - player.position.x);
+        float yToCompare = transform.position.y + xDifference;
+
+        bool isPlayerAbovePinFloor = player.position.y > yToCompare;
+
+        pinFloor1.enabled = isPlayerAbovePinFloor;
+        pinFloor2.enabled = isPlayerAbovePinFloor;
     }
 }
