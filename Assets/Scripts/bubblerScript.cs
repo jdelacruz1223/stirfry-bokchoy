@@ -32,7 +32,11 @@ public class bubblerScript : MonoBehaviour
     {
         if (gameManager.isBlowPressed) {
             Debug.Log("push");
-            if (ringRB != null) ringRB.AddForce(dir * force);
+            if (ringRB != null)
+            {
+                ringRB.AddForce(dir * force);
+                ringRB.GetComponent<RingRotator>().RotateRing(dir);
+            } 
         }
         if (!gameManager.isPaused && Input.GetKeyDown(KeyCode.Space)) {
             particle.Play();
