@@ -11,11 +11,13 @@ public class movingObject : MonoBehaviour
     [SerializeField] private float distance = 5f;
     private Vector2 startPos;
     private Vector2 endPos;
+    private GameManager gameManager;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         startPos = transform.position;
         switch (moveDirection) {
             case direction.up:

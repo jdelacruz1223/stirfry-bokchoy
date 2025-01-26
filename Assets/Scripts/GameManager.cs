@@ -5,7 +5,7 @@ using UnityEngine.Analytics;
 public class GameManager : MonoBehaviour
 {
     public bool isBlowPressed;
-    bool isPaused;
+    public bool isPaused;
     [SerializeField] GameObject pauseMenuObject;
     MenuManager menuManager;
     
