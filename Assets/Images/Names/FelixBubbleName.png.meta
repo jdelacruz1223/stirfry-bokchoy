@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FelixBubbleName_0: 3290487554958498989
+      FelixBubbleName_1: -291188875581100241
+      FelixBubbleName_10: -5528886198020202775
+      FelixBubbleName_11: -7361100368859397209
+      FelixBubbleName_12: 1727721665809536698
+      FelixBubbleName_13: 3835013537931086834
+      FelixBubbleName_2: -1688812758970543838
+      FelixBubbleName_3: 797703334396956220
+      FelixBubbleName_4: 1369350574695021498
+      FelixBubbleName_5: 1372876833490721777
+      FelixBubbleName_6: -2719436776327395548
+      FelixBubbleName_7: 6455195431213885430
+      FelixBubbleName_8: 2513315872194733023
+      FelixBubbleName_9: 2406351132668798660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

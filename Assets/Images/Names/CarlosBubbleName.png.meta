@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CarlosBubbleName_0: -8246243925077210113
+      CarlosBubbleName_1: 3758511020978258919
+      CarlosBubbleName_10: 8395491942213388704
+      CarlosBubbleName_2: 423333408202305534
+      CarlosBubbleName_3: 5723356029585790435
+      CarlosBubbleName_4: -3047606772057122486
+      CarlosBubbleName_5: 3338617200731325102
+      CarlosBubbleName_6: -6268337741149398183
+      CarlosBubbleName_7: 1879602767749590186
+      CarlosBubbleName_8: 2397798922808474000
+      CarlosBubbleName_9: 4579068488910135860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CheezebearBubbleName_0: 3901300638578825236
+      CheezebearBubbleName_1: 3638167076784654407
+      CheezebearBubbleName_10: 8614871463476715096
+      CheezebearBubbleName_2: 7622396350318471332
+      CheezebearBubbleName_3: 855463882471911614
+      CheezebearBubbleName_4: 89529418381146107
+      CheezebearBubbleName_5: 1123362821522324464
+      CheezebearBubbleName_6: -5775585539444266559
+      CheezebearBubbleName_7: 6703997226279367633
+      CheezebearBubbleName_8: 2884195333355925927
+      CheezebearBubbleName_9: -244928440997993924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

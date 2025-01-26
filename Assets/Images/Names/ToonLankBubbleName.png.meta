@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ToonLankBubbleName_0: 8820528538315681937
+      ToonLankBubbleName_1: -8422841056353628282
+      ToonLankBubbleName_2: -1583957883874587930
+      ToonLankBubbleName_3: 2812205121039770301
+      ToonLankBubbleName_4: -6672448219496689314
+      ToonLankBubbleName_5: -650393361503936921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
