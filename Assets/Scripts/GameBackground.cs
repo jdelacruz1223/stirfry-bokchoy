@@ -2,24 +2,13 @@ using UnityEngine;
 
 public class GameBackground : MonoBehaviour
 {
-    GameObject currentBackground;
     [SerializeField] GameObject[] backgrounds;
 
-    void Start()
+    public void ChangeBackground(string name)
     {
-        
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
+        foreach (GameObject background in backgrounds)
         {
-            Debug.Log(name);
+            background.SetActive(name == background.name);
         }
-    }
-
-    void ChangeBackground()
-    {
-        // e
     }
 }
