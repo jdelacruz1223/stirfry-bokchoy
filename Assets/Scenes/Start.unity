@@ -1483,6 +1483,8 @@ MonoBehaviour:
   currentState: 0
   audioSource: {fileID: 1349446038}
   DebugMode: 0
+  border1: {fileID: 7130211404878426587, guid: 876f8676774ad6543888d2c8293dde07, type: 3}
+  border2: {fileID: 5718160406714711357, guid: 1f640ff467c5d7440877a3379a8ebdca, type: 3}
 --- !u!82 &1349446038
 AudioSource:
   m_ObjectHideFlags: 0
