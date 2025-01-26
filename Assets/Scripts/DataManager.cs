@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class DataManager : MonoBehaviour
 {
+    [SerializeField] AudioSource audioSource;
+
     public CheckpointPin currentCheckpoint;
 
     private static DataManager instance;
@@ -25,5 +28,19 @@ public class DataManager : MonoBehaviour
     public void SetCheckpoint(CheckpointPin newCheckpoint)
     {
         currentCheckpoint = newCheckpoint;
+    }
+
+    void Update() {
+        Debug.Log(audioSource.volume);
+    }
+
+    public float GetVolume()
+    {
+        return audioSource.volume;
+    }
+
+    public void SetVolume(float volume)
+    {
+        audioSource.volume = volume;
     }
 }

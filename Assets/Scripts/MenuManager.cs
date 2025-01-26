@@ -3,8 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    Scene currentScene;
+    [SerializeField] GameObject optionsPrefab;
+    GameObject optionsManager;
 
+    Scene currentScene;
+    
+    void OnEnable() {
+        OptionsManager[] optionsManagers = FindObjectsByType<OptionsManager>(FindObjectsSortMode.None);
+
+        if (optionsManagers.Length > 0)
+        {
+            optionsManager = optionsManagers[0].gameObject;
+            optionsManager.SetActive(false);
+        }
+    }
 
     public void StartButton()
     {
@@ -20,8 +32,12 @@ public class MenuManager : MonoBehaviour
 
     public void OptionsButton()
     {
-        if (DataManager.Instance.DebugMode) Debug.Log("Options Button (Nothing atm)");
+        if (DataManager.Instance.DebugMode) Debug.Log("Options Button");
 
+        if (optionsManager == null)
+            optionsManager = Instantiate(optionsPrefab, Vector3.zero, Quaternion.identity);
+        else
+            optionsManager.SetActive(true);
     }
 
     public void QuitToMainMenuButton()
