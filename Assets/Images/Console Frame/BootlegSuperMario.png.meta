@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BootlegSuperMario_0: 9106335532771469827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
