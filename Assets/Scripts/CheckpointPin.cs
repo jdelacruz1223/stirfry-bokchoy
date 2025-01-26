@@ -5,7 +5,13 @@ public class CheckpointPin : MonoBehaviour
     [SerializeField] BoxCollider2D pinFloor1;
     [SerializeField] BoxCollider2D pinFloor2;
 
+    DataManager dataManager;
     Transform player;
+
+    void Start()
+    {
+        dataManager = FindAnyObjectByType<DataManager>();
+    }
     
     void Update()
     {
@@ -24,5 +30,10 @@ public class CheckpointPin : MonoBehaviour
 
         pinFloor1.enabled = isPlayerAbovePinFloor;
         pinFloor2.enabled = isPlayerAbovePinFloor;
+    }
+
+    public void ActivateCheckpoint()
+    {
+        dataManager.SetCheckpoint(this);
     }
 }

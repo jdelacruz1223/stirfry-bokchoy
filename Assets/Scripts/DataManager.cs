@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
+    public CheckpointPin currentCheckpoint;
+
     private static DataManager instance;
     public static DataManager Instance {get {return instance;}}
     
@@ -20,5 +22,8 @@ public class DataManager : MonoBehaviour
         }
     }
 
-
+    public void SetCheckpoint(CheckpointPin newCheckpoint)
+    {
+        currentCheckpoint = newCheckpoint;
+    }
 }
