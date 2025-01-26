@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Background Parent
+  - Border
   layers:
   - Default
   - TransparentFX

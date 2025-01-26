@@ -1,3 +1,4 @@
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -13,6 +14,10 @@ public class DataManager : MonoBehaviour
     
     [SerializeField] AudioSource audioSource;
     [SerializeField] public bool DebugMode;
+    [SerializeField] private Sprite border1;
+    [SerializeField] private Sprite border2;
+    private Image gameborder;
+    private int rand;
 
     public void Awake()
     {
@@ -28,12 +33,17 @@ public class DataManager : MonoBehaviour
     }
 
     void Start() {
-        
+        rand =  Random.Range(0,100) % 2;
     }
 
     void Update() {
         Debug.Log(audioSource.volume);
-
+        if (gameborder == null) gameborder = GameObject.FindGameObjectWithTag("Border").GetComponent<Image>();
+        if (rand == 1) {
+            gameborder.sprite = border1;
+        } else {
+            gameborder.sprite = border2;
+        }
         if (Input.GetKeyDown(KeyCode.Tab))
             GoNextBackground();
     }
