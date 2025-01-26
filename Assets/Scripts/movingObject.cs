@@ -58,7 +58,7 @@ public class movingObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Input.GetKey(KeyCode.Space) ? Vector2.MoveTowards(transform.position, endPos, speed * Time.deltaTime) : Vector2.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
+        transform.position = gameManager.isBlowPressed ? Vector2.MoveTowards(transform.position, endPos, speed * Time.deltaTime) : Vector2.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
     }
 
 }

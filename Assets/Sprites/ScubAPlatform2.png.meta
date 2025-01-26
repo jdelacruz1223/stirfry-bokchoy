@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ScubAPlatform2_0: 1472753181046743387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
