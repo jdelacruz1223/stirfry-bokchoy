@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UrchinSpritesheet_0: 5227103634848729119
+      UrchinSpritesheet_1: 4759800340729663830
+      UrchinSpritesheet_2: 1371665884947854764
+      UrchinSpritesheet_3: 2312048634283228705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
