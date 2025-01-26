@@ -3072,6 +3072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df8cd3c57a409e46ad08de1faefcfd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionsPrefab: {fileID: 0}
 --- !u!1001 &713574822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6281,6 +6282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4941da752c3397458435e15a5bda46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  currentCheckpoint: {fileID: 0}
   DebugMode: 0
 --- !u!4 &1600851165
 Transform:
@@ -8440,13 +8443,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021662130}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.223, y: 3.45, z: 0}
+  m_LocalRotation: {x: -0.00020520395, y: -0.005786986, z: 0.015893491, w: 0.99985695}
+  m_LocalPosition: {x: -1.26, y: 3.63, z: 0}
   m_LocalScale: {x: 7.469782, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.013, y: -0.663, z: 1.821}
 --- !u!1001 &2127345815
 PrefabInstance:
   m_ObjectHideFlags: 0
