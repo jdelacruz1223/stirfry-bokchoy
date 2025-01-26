@@ -1405,9 +1405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4941da752c3397458435e15a5bda46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1349446038}
-  currentCheckpoint: {fileID: 0}
   currentState: 0
+  audioSource: {fileID: 1349446038}
   DebugMode: 0
 --- !u!82 &1349446038
 AudioSource:
@@ -1419,12 +1418,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: abdb8cde5166b054fbfef5fe909f0281, type: 3}
+  m_Resource: {fileID: 8300000, guid: abdb8cde5166b054fbfef5fe909f0281, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

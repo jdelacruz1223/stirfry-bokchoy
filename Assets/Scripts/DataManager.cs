@@ -40,14 +40,20 @@ public class DataManager : MonoBehaviour
 
     public void GoNextBackground()
     {
-        currentBackgroundNumber++;
-
-        if (backgroundParent == null)
-            backgroundParent = GameObject.FindGameObjectWithTag("Background Parent").transform;
+        // look for the game object that has all the backgrounds childed to it. if it can't be found, then we can't move forward
+        // with this function
+        GameObject[] backgroundParents = GameObject.FindGameObjectsWithTag("Background Parent");
+        if (backgroundParents.Length == 0)
+            return;
         
+        backgroundParent = backgroundParents[0].transform;
+        
+        // go to the next background. if we're currently at the last one, then we simply loop back to the first one
+        currentBackgroundNumber++;
         if (currentBackgroundNumber >= backgroundParent.childCount)
             currentBackgroundNumber -= backgroundParent.childCount;
         
+        // lastly, we simply activate the currently-selected background, and deactivate the other ones
         for (int i = 0; i < backgroundParent.childCount; i++)
             backgroundParent.GetChild(i).gameObject.SetActive(i == currentBackgroundNumber);
     }
