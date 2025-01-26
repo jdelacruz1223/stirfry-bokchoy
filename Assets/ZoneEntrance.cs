@@ -14,7 +14,7 @@ public class ZoneEntrance : MonoBehaviour
     {
         if (checkpointToResetTo != null)
         {
-            dataManager.SetCheckpoint(checkpointToResetTo);
+            //dataManager.SetCheckpoint(checkpointToResetTo);
         }
     }
 }

@@ -34,6 +34,6 @@ public class CheckpointPin : MonoBehaviour
 
     public void ActivateCheckpoint()
     {
-        dataManager.SetCheckpoint(this);
+        //dataManager.SetCheckpoint(this);
     }
 }
