@@ -1,10 +1,12 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class movingObject : MonoBehaviour
 {
     private enum direction {
-        up, down, left, right
+        up, down, left, right,
+        upright, upleft, downright, downleft
     }
     [SerializeField] private float speed = 10f;
     [SerializeField] private direction moveDirection;
@@ -31,6 +33,22 @@ public class movingObject : MonoBehaviour
                 break;
             case direction.left:
                 endPos = new Vector2(startPos.x - distance, startPos.y);
+                break;
+            case direction.upleft:
+                distance = Mathf.Sin(3.141592654f/4f) * distance;
+                endPos = new Vector2(startPos.x - distance, startPos.y + distance);
+                break;
+            case direction.upright:
+                distance = Mathf.Sin(3.141592654f/4f) * distance;
+                endPos = new Vector2(startPos.x + distance, startPos.y + distance);
+                break;
+            case direction.downleft:
+                distance = Mathf.Sin(3.141592654f/4f) * distance;
+                endPos = new Vector2(startPos.x - distance, startPos.y - distance);
+                break;
+            case direction.downright:
+                distance = Mathf.Sin(3.141592654f/4f) * distance;
+                endPos = new Vector2(startPos.x + distance, startPos.y - distance);
                 break;
             default: 
                 break;
