@@ -28,7 +28,7 @@ public class DataManager : MonoBehaviour
     }
 
     void Start() {
-        GoNextBackground();
+        
     }
 
     void Update() {
