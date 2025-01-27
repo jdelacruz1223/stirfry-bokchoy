@@ -1,5 +1,6 @@
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 
 public class DataManager : MonoBehaviour
@@ -38,11 +39,13 @@ public class DataManager : MonoBehaviour
 
     void Update() {
         Debug.Log(audioSource.volume);
-        if (gameborder == null) gameborder = GameObject.FindGameObjectWithTag("Border").GetComponent<Image>();
-        if (rand == 1) {
-            gameborder.sprite = border1;
-        } else {
-            gameborder.sprite = border2;
+        if (SceneManager.GetActiveScene().name == "Game" && gameborder == null) {
+            gameborder = GameObject.FindGameObjectWithTag("Border").GetComponent<Image>();
+            if (rand == 1) {
+                gameborder.sprite = border1;
+            } else {
+                gameborder.sprite = border2;
+            }
         }
         if (Input.GetKeyDown(KeyCode.Tab))
             GoNextBackground();
