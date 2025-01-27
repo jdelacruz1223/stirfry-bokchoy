@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (!isWin) {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) && !isPaused)
             {
                 if (DataManager.Instance.DebugMode) Debug.Log("Input: Space Key");
                 isBlowPressed = true;
