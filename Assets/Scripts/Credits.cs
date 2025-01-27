@@ -1,4 +1,6 @@
-using Microsoft.Unity.VisualStudio.Editor;
+#if UNITY_EDITOR
+    using Microsoft.Unity.VisualStudio.Editor;
+#endif
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
